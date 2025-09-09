@@ -1,0 +1,13 @@
+Started by user pooja R
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\demo
+[demo] $ cmd /c call C:\Windows\TEMP\jenkins6388965572966516394.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\demo>cd C:\Users\admin\Desktop\HelloWorld 
+
+C:\Users\admin\Desktop\HelloWorld>javac HelloWorld.java 
+
+C:\Users\admin\Desktop\HelloWorld>java HelloWorld 
+Hello Jenkins!!
+C:\Users\admin\Desktop\HelloWorld>exit 0 
+Finished: SUCCESS
