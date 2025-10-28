@@ -1,0 +1,54 @@
+
+docker --version 
+
+E: 
+mkdir my-docker-app 
+cd my-docker-app 
+
+code . 
+
+console.log("Hello, Docker!"); 
+{
+"name": "my-docker-app", 
+"version": "1.0.0", 
+"main": "app.js", 
+"scripts": { 
+"start": "node app.js" 
+} 
+}
+
+# Use official Node.js image as base 
+FROM node:18 
+# Set working directory inside container 
+WORKDIR /app 
+# Copy app files into container 
+COPY . . 
+# Run the app 
+CMD ["node", "app.js"] 
+
+
+docker build -t my-simple-image:1.0 . 
+
+docker run my-simple-image:1.0 
+
+docker images 
+ List running containers: 
+docker ps 
+ List all containers (including stopped): 
+docker ps –a
+Step 9: Log in to Docker Hub
+
+•	docker login
+
+Step 10: Tag an Existing Image (if needed)
+(Only if your image was not built with your Docker Hub username)
+docker tag my-simple-image:1.0 username/first-image:1.0
+
+Step 11: Push Image to Docker Hub
+
+docker push username/first-image:1.0
+
+.
+Step 11: Pull Image to Docker Hub
+
+docker pull username/first-image:1.0
